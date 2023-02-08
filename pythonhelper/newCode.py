@@ -14,7 +14,6 @@ mycol = mydb["proxyList"]
 data = requests.get("https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all").content
 
 proxyList  = str(data).split("\\r\\n")[:-1]
-print(proxyList)
 workingProxy = []
 
 
@@ -59,5 +58,3 @@ with ThreadPoolExecutor(max_workers=100) as executor:
     for item in proxyList:
         executor.submit(is_bad_proxy , item)
         
-        
-print(workingProxy)

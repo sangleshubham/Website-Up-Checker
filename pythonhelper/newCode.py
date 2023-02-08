@@ -5,7 +5,7 @@ import pymongo
 
 
 
-client = pymongo.MongoClient("")
+client = pymongo.MongoClient("MONGOURI")
 db = client.test
 
 mydb = client.nodeexpressproject

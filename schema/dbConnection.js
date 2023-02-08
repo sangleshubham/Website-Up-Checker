@@ -1,6 +1,6 @@
-import { MongoClient, ServerApiVersion } from 'mongodb'
+import { MongoClient } from 'mongodb'
+
 
 export async function getConnection(){
-    const url = "";
-  return  (await MongoClient.connect(url))
+  return  (await MongoClient.connect(process.env.MONGOURI))
 }

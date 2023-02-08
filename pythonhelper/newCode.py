@@ -5,11 +5,14 @@ import pymongo
 
 
 
-client = pymongo.MongoClient("MONGOURI")
+client = pymongo.MongoClient("")
 db = client.test
 
 mydb = client.nodeexpressproject
 mycol = mydb["proxyList"]
+
+mycol.drop()
+
 
 data = requests.get("https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all").content
 

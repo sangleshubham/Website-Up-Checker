@@ -9,7 +9,7 @@
 - Updated VPN every day.
 
 
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sangleshubham&show_icons=true&theme=transparent)
 
 
 -------------

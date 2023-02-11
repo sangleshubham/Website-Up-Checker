@@ -27,7 +27,6 @@ export async function isSiteUp(req, res) {
             break;
           } catch (e) {
             console.log(e);
-
             if ((e.code = "ENOTFOUND")) {
               console.log("Connection error");
               res.send({ status: "Failed" });

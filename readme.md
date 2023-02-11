@@ -1,4 +1,4 @@
-# IsMySIteUp.JS
+# IsMySiteUp.JS
 > "Is Site Up" monitors the status of your favorite web sites and checks whether they are down or not in diffrent countries. You can check a website status easily by using the tool. Just enter the url and location of country then a fresh site status test will be performed on the domain name in real time using our internal tooling.
 
 ### Features

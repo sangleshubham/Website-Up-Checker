@@ -14,6 +14,9 @@ app.use(express.json())
 
 app.use('/uptime' , router)
 
+app.get('/', (req,res)=> {
+  res.send("Working...").status(200)
+})
 
 app.listen(PORT, ()=> {
     console.log(`server started on port ${PORT}`)

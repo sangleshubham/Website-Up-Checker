@@ -11,10 +11,8 @@ export async function isSiteUp(req, res) {
       .project({ _id: 0 })
       .toArray()
       .then(async (dataArray) => {
-        console.log(dataArray);
         for (let proxy of dataArray) {
           try {
-            console.log("Inside try " + proxy.port);
             await got(req.body.site, {
               agent: {
                 https: tunnel.httpsOverHttp({
@@ -26,9 +24,8 @@ export async function isSiteUp(req, res) {
             res.send({ status: "Success" });
             break;
           } catch (e) {
-            console.log(e);
             if ((e.code = "ENOTFOUND")) {
-              console.log("Connection error");
+              console.log("Connection error " , e.message);
               res.send({ status: "Failed" });
               break;
             } else {

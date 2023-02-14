@@ -15,7 +15,7 @@ app.use(express.json())
 app.use('/uptime' , router)
 
 app.get('/', (req,res)=> {
-  res.send("Working...").status(200)
+  res.send("Working1...").status(200)
 })
 
 app.listen(PORT, ()=> {

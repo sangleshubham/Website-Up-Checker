@@ -19,7 +19,7 @@ export async function rateLimit(req, res, next) {
   // cooldown emits ttl which is time to live ... how much time we have fot this
 
   if (requstCount > 20) {
-    res.send("Rate limiting").status(403);
+    res.send("Rate limiting").status(429);
   } else {
     console.log(`Request Made so far ${requstCount}`);
     next();
